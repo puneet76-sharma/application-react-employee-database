@@ -1,6 +1,6 @@
 FROM node:18-alpine
 WORKDIR /frontend
-COPY ./*.json .
+COPY ./*.json /frontend/
 RUN npm install
 #RUN npm audit fix --force
 RUN yarn add react-scripts
